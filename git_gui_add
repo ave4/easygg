@@ -1,0 +1,7 @@
+#! /bin/bash
+
+#dir=`yad --width=400 --title="Путь к локальному git-репозиторию" --entry`
+
+XTERM="lxterminal  --working-directory=$1 -e"
+
+$XTERM "git add $2; bash"

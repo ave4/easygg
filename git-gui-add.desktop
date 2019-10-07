@@ -1,0 +1,16 @@
+
+[Desktop Entry]
+Type=Action
+Name[ru]=GIT gui - Добавить файлы
+ToolbarLabel=GIT GUI - add
+Profiles=profile-dir;
+
+[X-Action-Profile profile-dir]
+Name=Default profile
+Exec=bash -c "$HOME/.local/bin/easygg/git_gui_add %d %F"
+Basenames=*;
+Matchcase=false
+SelectionCount==1
+
+
+

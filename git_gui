@@ -1,0 +1,13 @@
+#! /bin/bash
+
+#dir=`yad --width=400 --title="Путь к локальному git-репозиторию" --entry`
+
+XTERM="lxterminal  --working-directory=$1 -e"
+
+yad --form --width=250 --text="Выберите команду git клиента:" --title="Графическая оболочка для GIT" \
+--field="git pull":fbtn "$XTERM 'git pull; bash'" \
+--field="git add":fbtn "$XTERM 'git add --all; bash'" \
+--field="git commit":fbtn "$XTERM 'GIT_EDITOR=leafpad git commit; bash'" \
+--field="init":fbtn "$XTERM 'git init; bash'" \
+--field="status":fbtn "$XTERM 'git status; bash'" \
+--button=Выход:1
