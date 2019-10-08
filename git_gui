@@ -6,8 +6,12 @@ XTERM="lxterminal  --working-directory=$1 -e"
 
 yad --form --width=250 --text="Выберите команду git клиента:" --title="Графическая оболочка для GIT" \
 --field="git pull":fbtn "$XTERM 'git pull; bash'" \
+--field="git push":fbtn "$XTERM 'git push; bash'" \
 --field="git add":fbtn "$XTERM 'git add --all; bash'" \
 --field="git commit":fbtn "$XTERM 'GIT_EDITOR=leafpad git commit; bash'" \
 --field="init":fbtn "$XTERM 'git init; bash'" \
 --field="status":fbtn "$XTERM 'git status; bash'" \
+--field="Терминал":fbtn "$XTERM 'bash'" \
+--field="gitg":fbtn "gitg" \
+--field="Сравнить рабочий каталог":fbtn "$XTERM 'git diff; bash'" \
 --button=Выход:1
