@@ -2,6 +2,6 @@
 
 uri=`yad --width=400 --title="Путь к удаленному git-репозиторию" --entry`
 
-XTERM="lxterminal  --working-directory=$1 -e"
+XTERM="lxterminal  --working-directory='$1' -e"
 
 $XTERM "git clone $uri; bash"

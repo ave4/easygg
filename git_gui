@@ -2,7 +2,7 @@
 
 #dir=`yad --width=400 --title="Путь к локальному git-репозиторию" --entry`
 
-XTERM="lxterminal  --working-directory=$1 -e"
+XTERM="lxterminal  --working-directory='$1' -e"
 
 yad --form --width=250 --text="Выберите команду git клиента:" --title="Графическая оболочка для GIT" \
 --field="git pull":fbtn "$XTERM 'git pull; bash'" \
