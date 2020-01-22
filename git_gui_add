@@ -4,4 +4,4 @@
 
 XTERM="lxterminal  --working-directory='$1' -e"
 
-$XTERM "git add $2"
+$XTERM "git add '$2'"
