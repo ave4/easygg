@@ -7,9 +7,9 @@ XTERM="lxterminal  --working-directory='$1' -e"
 yad --form --width=250 --text="Выберите команду git клиента:" --title="Графическая оболочка для GIT" \
 --field="Получить":fbtn "$XTERM 'git pull; bash'" \
 --field="Загрузить":fbtn "$XTERM 'git push; bash'" \
---field="Добавить":fbtn "$XTERM 'git add --all; bash'" \
---field="Фиксировать":fbtn "$XTERM 'GIT_EDITOR=leafpad git commit; bash'" \
---field="Создать":fbtn "$XTERM 'git init; bash'" \
+--field="Добавить":fbtn "$XTERM 'git add --all'" \
+--field="Фиксировать":fbtn "$XTERM 'GIT_EDITOR=leafpad git commit; sleep 3'" \
+--field="Создать":fbtn "$XTERM 'git init; sleep 1'" \
 --field="Статус":fbtn "$XTERM 'git status; bash'" \
 --field="Терминал":fbtn "$XTERM 'bash'" \
 --field="gitg":fbtn "gitg" \
