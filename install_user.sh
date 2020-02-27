@@ -1,9 +1,7 @@
 #!/bin/bash
 
 SCRIPTPATH=`dirname $0`
-
 PREFIX="$HOME/.local/bin/easygg"
-
 
 if [[ `id -u` == "0" ]]; then
 DEST="/usr/share/file-manager/actions/"

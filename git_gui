@@ -1,7 +1,5 @@
 #! /bin/bash
 
-#dir=`yad --width=400 --title="Путь к локальному git-репозиторию" --entry`
-
 XTERM="lxterminal  --working-directory='$1' -e"
 GDIFF="sh -c 'git diff | yad --text-info --lang=diff --image=gtk3-demo --title=Сравнение_файлов --width=950 --height=650 --button=Выход:1'"
 
