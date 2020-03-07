@@ -6,7 +6,7 @@ GDIFF="sh -c 'git diff | yad --text-info --lang=diff --image=gtk3-demo --title=�
 yad --form --width=250 --image=org.gnome.gitg --text="Выберите команду git клиента:" --title="Графическая оболочка для GIT" \
 --field="Получить":fbtn "$XTERM 'git pull; bash'" \
 --field="Загрузить":fbtn "$XTERM 'git push; bash'" \
---field="Добав. и фиксировать":fbtn "$XTERM 'git add --all; GIT_EDITOR=leafpad git commit; sleep 1'" \
+--field="Добав. и фиксировать":fbtn "$XTERM 'git add --all; GIT_EDITOR=leafpad git commit'" \
 --field="Добавить":fbtn "$XTERM 'git add --all'" \
 --field="Фиксировать":fbtn "$XTERM 'GIT_EDITOR=leafpad git commit; sleep 3'" \
 --field="Создать":fbtn "$XTERM 'git init; sleep 1'" \
