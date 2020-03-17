@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# Copyright (C) 2019-2020  Максим Кутный <gtk3@inbox.ru>
 XTERM="lxterminal  --working-directory='$1' -e"
 GDIFF="sh -c 'git diff | yad --text-info --lang=diff --image=gtk3-demo --title=Сравнение_файлов --width=950 --height=650 --button=Выход:1'"
 
