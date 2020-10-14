@@ -1,13 +1,13 @@
 
 [Desktop Entry]
 Type=Action
-Name[ru]=GIT gui - Клонировать репозиторий
-ToolbarLabel=GIT GUI - clone
+Name[ru]=SVN gui - Клонировать репозиторий
+ToolbarLabel=SVN GUI - clone
 Profiles=profile-dir;
 
 [X-Action-Profile profile-dir]
 Name=Default profile
-Exec=bash -c "$HOME/.local/bin/easygg/git_gui_clone %d"
+Exec=bash -c "$HOME/.local/bin/easygg/svn_gui_clone %d"
 MimeTypes = inode/directory;
 Basenames=*;
 Matchcase=false

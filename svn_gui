@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# Copyright (C) 2019-2020  Максим Кутный <gtk3@inbox.ru>
+XTERM="lxterminal  --working-directory='$1' -e"
+GDIFF="sh -c 'git diff | yad --text-info --lang=diff --image=gtk3-demo --title=Сравнение_файлов --width=950 --height=650 --button=Выход:1'"
+
+yad --form --width=250 --image=org.gnome.gitg --text="Выберите команду svn клиента:" --title="Графическая оболочка для SubVersion" \
+--field="Загрузить":fbtn "$XTERM 'svn up; bash'" \
+--field="Добавить":fbtn "$XTERM 'git add --force .'" \
+--field="Фиксировать":fbtn "$XTERM 'EDITOR=leafpad svn commit; sleep 3'" \
+--field="Создать":fbtn "$XTERM 'git init; sleep 1'" \
+--field="Статус":fbtn "$XTERM 'svn status; bash'" \
+--field="Терминал":fbtn "$XTERM 'bash'" \
+--field="Альтернативный интерфейс":fbtn "git gui" \
+--field="Сравнить рабочий каталог":fbtn "$GDIFF" \
+--button=Выход:1

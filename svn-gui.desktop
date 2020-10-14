@@ -1,13 +1,13 @@
 
 [Desktop Entry]
 Type=Action
-Name[ru]=GIT gui - Отрыть здесь
-ToolbarLabel=GIT GUI - open
+Name[ru]=SVN gui - Отрыть здесь
+ToolbarLabel=SVN GUI - open
 Profiles=profile-dir;
 
 [X-Action-Profile profile-dir]
 Name=Default profile
-Exec=bash -c "$HOME/.local/bin/easygg/git_gui %d"
+Exec=bash -c "$HOME/.local/bin/easygg/svn_gui %d"
 MimeTypes = inode/directory;
 Basenames=*;
 Matchcase=false
